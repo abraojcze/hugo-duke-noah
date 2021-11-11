@@ -22,5 +22,6 @@ phases:
       - hugo
       - aws s3 sync public/ s3://hugo-bucket-1/ --region eu-west-1 --delete
   post-build:
-    - echo 'Build completed!!!'
+    commands:
+      - echo 'Build completed!!!'
     
